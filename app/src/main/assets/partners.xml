@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<partners>
+    <partner>
+        <nombre>Media</nombre>
+        <direccion>plaza jose maria 5 3A</direccion>
+        <poblacion>donostia</poblacion>
+        <CIF>343243433</CIF>
+        <telefono>629 53 99 23</telefono>
+        <email>media@gmail.com</email>
+        <comercial>pablo</comercial>
+    </partner>
+
+    <partner>
+        <nombre>Coches.com</nombre>
+        <direccion>leopoldo 5 4ª izquierda</direccion>
+        <poblacion>Aia</poblacion>
+        <CIF>634343435</CIF>
+        <telefono>612 19 99 93</telefono>
+        <email>coches@gmail.com</email>
+        <comercial>Mikel</comercial>
+    </partner>
+
+    <partner>
+        <nombre>Audi</nombre>
+        <direccion>ana mari 9 1ª derecha</direccion>
+        <poblacion>madrid</poblacion>
+        <CIF>343243343</CIF>
+        <telefono>629 76 99 23</telefono>
+        <email>Audi@gmail.com</email>
+        <comercial>Ane</comercial>
+    </partner>
+
+</partners>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.appopendomotics">
+    <!-- Pedir permisos para escribir en los documentos del telefono -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ManifestOrder,ScopedStorage" />
+    <!-- Pedir permisos para poder llamar -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/nombre_app"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppOpenDomotics"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.pedidos.Crear_Pedidos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pedidos.Ver_pedidos"
+            android:exported="false" /> <!-- Especifica la clave de API de Google Maps que se va a utilizar para inicializar Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDvcco_ZjWHhL6lkkE27WnA4hQGS8chUqc" /> <!-- Declara la actividad principal de la aplicación y establece su filtro de intención para que se inicie al iniciar la aplicación -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Declara una actividad para el inicio de sesión y establece que no se exportará -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="LoginActivity"
+            tools:ignore="Instantiatable" /> <!-- Declara una actividad para el menú principal -->
+        <activity
+            android:name=".ui.menu.MenuActivity"
+            android:exported="false"
+            android:label="MenuActivity"
+            android:theme="@style/Theme.AppOpenDomotics.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.partners.Crear_Partners"
+            android:exported="false" />
+        <activity
+            android:name=".ui.partners.Ver_Partners"
+            android:exported="false" />
+        <activity
+            android:name=".ui.calendario.Ver_citas"
+            android:exported="false" />
+        <activity
+            android:name=".ui.calendario.Crear_Citas"
+            android:exported="false" />
+    </application>
+
+</manifest>

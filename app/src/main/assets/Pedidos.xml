@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedidos>
+    <pedido>
+        <cabecera>
+            <n_pedido>1</n_pedido>
+            <fecha_pedido>28/12/2022</fecha_pedido>
+            <fecha_pago>03/01/2023</fecha_pago>
+            <fecha_envio>-</fecha_envio>
+            <n_comercial>1</n_comercial>
+            <delegacion_provincial>Guipuzkoa</delegacion_provincial>
+            <partner>MediaMarkt</partner>
+        </cabecera>
+
+        <detalle>
+            <articulo>
+                <codigo>1</codigo>
+                <cantidad>2</cantidad>
+                <precio>40.000</precio>
+                <imagen></imagen>
+            </articulo>
+
+            <articulo>
+                <codigo>3</codigo>
+                <cantidad>6</cantidad>
+                <precio>50.000</precio>
+                <imagen></imagen>
+            </articulo>
+        </detalle>
+    </pedido>
+    <pedido>
+        <cabecera>
+            <n_pedido>2</n_pedido>
+            <fecha_pedido>30/12/2022</fecha_pedido>
+            <fecha_pago>03/04/2023</fecha_pago>
+            <fecha_envio>03/04/2023</fecha_envio>
+            <n_comercial>2</n_comercial>
+            <delegacion_provincial>Barcelona</delegacion_provincial>
+            <partner>Aro</partner>
+        </cabecera>
+
+        <detalle>
+            <articulo>
+                <codigo>2</codigo>
+                <cantidad>1</cantidad>
+                <precio>800.000</precio>
+                <imagen></imagen>
+            </articulo>
+
+            <articulo>
+                <codigo>6</codigo>
+                <cantidad>3</cantidad>
+                <precio>10.000</precio>
+                <imagen></imagen>
+            </articulo>
+        </detalle>
+    </pedido>
+</pedidos>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appopendomotics.ui.home.FragmentHome"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_calendario"
+        android:name="com.example.appopendomotics.ui.calendario.FragmentCalendario"
+        android:label="@string/menu_calendario"
+        tools:layout="@layout/fragment_calendario" />
+
+    <fragment
+        android:id="@+id/nav_partners"
+        android:name="com.example.appopendomotics.ui.partners.FragmentPartners"
+        android:label="@string/menu_partners"
+        tools:layout="@layout/fragment_partners" />
+
+    <fragment
+        android:id="@+id/nav_pedidos"
+        android:name="com.example.appopendomotics.ui.pedidos.FragmentPedidos"
+        android:label="@string/menu_pedidos"
+        tools:layout="@layout/fragment_pedidios" />
+
+    <fragment
+        android:id="@+id/nav_envios"
+        android:name="com.example.appopendomotics.ui.envios.FragmentEnvios"
+        android:label="@string/menu_envios"
+        tools:layout="@layout/fragment_envios" />
+</navigation>

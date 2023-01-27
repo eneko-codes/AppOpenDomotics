@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pedidos.Crear_Pedidos">
+
+  <TextView
+      android:id="@+id/TVnPedido"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="39dp"
+      android:text="Numero de pedido:"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/ETnPedidos"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/TVfechaPedido"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginBottom="14dp"
+      android:text="Fecha del pedido:"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toTopOf="@+id/ETfechaPago"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+      android:id="@+id/ETfechaPedido"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toTopOf="@+id/TVfechaPedido"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/TVfechaPedido" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="36dp"
+      android:layout_marginBottom="35dp"
+      android:text="fecha pago:"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toTopOf="@+id/TVfechaEnvio"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+      android:id="@+id/ETfechaPago"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="119dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="120dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toBottomOf="@+id/ETnComercial"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/ETnPedidos" />
+
+  <EditText
+      android:id="@+id/ETfechaEnvio"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="13dp"
+      android:layout_marginEnd="12dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ETfechaPago" />
+
+  <TextView
+      android:id="@+id/TVfechaEnvio"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="36dp"
+      android:layout_marginBottom="31dp"
+      android:text="Fecha de envio"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toTopOf="@+id/TVncomercial"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/TVncomercial"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="4dp"
+      android:layout_marginBottom="20dp"
+      android:text="codigo del comercial:"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toTopOf="@+id/ETdelegacion"
+      app:layout_constraintEnd_toStartOf="@+id/ETnComercial" />
+
+  <EditText
+      android:id="@+id/ETnComercial"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="11dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBaseline_toBaselineOf="@+id/TVncomercial"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <TextView
+      android:id="@+id/TVdelegacionprovi"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="37dp"
+      android:layout_marginBottom="37dp"
+      android:text="Delegacion:"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toTopOf="@+id/TVpartner"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+      android:id="@+id/ETdelegacion"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="1dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toBottomOf="@+id/TVdelegacionprovi"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <EditText
+      android:id="@+id/ETpartner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ETdelegacion" />
+
+  <TextView
+      android:id="@+id/TVpartner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="37dp"
+      android:layout_marginBottom="31dp"
+      android:text="Partners:"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toTopOf="@+id/TVcodigoArti"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/TVcodigoArti"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="23dp"
+      android:text="Codigo del articulo:"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toTopOf="@+id/ETcantidad"
+      app:layout_constraintEnd_toStartOf="@+id/ETcodigoArti" />
+
+  <EditText
+      android:id="@+id/ETcodigoArti"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBaseline_toBaselineOf="@+id/TVcodigoArti"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <EditText
+      android:id="@+id/ETcantidad"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="17dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toTopOf="@+id/ETprecio"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <TextView
+      android:id="@+id/TVcantidad"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="37dp"
+      android:layout_marginTop="46dp"
+      android:text="Cantidad:"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/TVcodigoArti" />
+
+  <TextView
+      android:id="@+id/TVprecio"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="37dp"
+      android:layout_marginTop="40dp"
+      android:text="Precio:"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/TVcantidad" />
+
+  <EditText
+      android:id="@+id/ETprecio"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="7dp"
+      android:layout_marginBottom="134dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="153dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="35dp"
+      android:layout_marginBottom="44dp"
+      android:text="Crear"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ETprecio" />
+</androidx.constraintlayout.widget.ConstraintLayout>

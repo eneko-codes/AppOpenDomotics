@@ -1,0 +1,27 @@
+<resources>
+    <string name="nombre_app">Open Domotics</string>
+
+    <string name="login_email">Email</string>
+    <string name="login_clave">Contraseña</string>
+    <string name="login_boton_acceder">Iniciar sesión</string>
+
+    <string name="barra_lateral_abrir">Abrir barra lateral</string>
+    <string name="barra_lateral_cerrar">Cerrar barra lateral</string>
+    <string name="barra_lateral_nombre_encabezado">Open Domotics</string>
+    <string name="barra_lateral_descripcion_encabezado">Encabezado de la barra lateral</string>
+
+    <string name="desplegable_cerrar_sesion">Cerrar sesión</string>
+
+    <string name="menu_home">Información</string>
+    <string name="menu_calendario">Calendario de citas</string>
+    <string name="menu_partners">Gestión de partners</string>
+    <string name="menu_pedidos">Gestión de pedidos</string>
+    <string name="menu_envios">Envios a delegación</string>
+    <string name="titulo">Titulo:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="hora">Hora:</string>
+    <string name="asunto">Asunto:</string>
+    <string name="crear_nueva_cita">Crear nueva cita</string>
+    <string name="llamar_a_la_delegacion">Llamar a la delegacion</string>
+    <string name="enviar_email_a_la_delegacion">Enviar email a la delegacion</string>
+</resources>
